@@ -1,17 +1,51 @@
-# enrollment_app
+# Student Enrollment App
 
-An final exam projects.
+This app is created to fulfill the requirements for the Wireless and Mobile Programming Final Exam. It is built using Flutter and Firebase Database.
 
-## Getting Started
+## Data Structure
 
-This project is a starting point for a Flutter application.
+### 1. Students
 
-A few resources to get you started if this is your first Flutter project:
+The `students` collection represents the students in the system. Each student has the following fields:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **id**: string (unique user ID)
+- **name**: string
+- **email**: string
+- **password**: string (hashed for security)
+- **enrollments**: array of objects, each containing:
+    - **subject_name**: string
+    - **credit_hours**: int
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# Student-Enrollment-App
+### 2. Subjects
+
+The `subjects` collection represents the subjects in the system. Each subject has the following fields:
+
+- **id**: string (unique subject ID)
+- **name**: string
+- **credit_hours**: int
+
+---
+
+## Features
+
+- Students can enroll in multiple subjects.
+- The app allows storing student details securely with encrypted passwords.
+- The app also tracks the number of credit hours for each subject enrolled by the student.
+- Data is stored in Firebase, ensuring real-time updates and scalability.
+
+---
+
+## Requirements
+
+- Flutter
+- Firebase Database
+
+---
+
+## Setup
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
