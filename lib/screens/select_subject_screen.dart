@@ -11,14 +11,16 @@ class SelectSubjectScreen extends StatefulWidget {
 
 class _SelectSubjectScreenState extends State<SelectSubjectScreen> {
   final List<Map<String, dynamic>> _subjects = [
-    {'id': 1, 'name': 'Mathematics', 'credits': 4},
-    {'id': 2, 'name': 'Physics', 'credits': 3},
-    {'id': 3, 'name': 'Chemistry', 'credits': 3},
-    {'id': 4, 'name': 'Biology', 'credits': 2},
-    {'id': 5, 'name': 'Computer Science', 'credits': 5},
-    {'id': 6, 'name': 'History', 'credits': 2},
-    {'id': 7, 'name': 'Geography', 'credits': 3},
-    {'id': 8, 'name': 'English Literature', 'credits': 2},
+    {'id': 1, 'name': 'Cyber Security Fundamental', 'credits': 3},
+    {'id': 2, 'name': 'Security Risk and Management', 'credits': 3},
+    {'id': 3, 'name': 'Digital Forensics', 'credits': 3},
+    {'id': 4, 'name': 'Ethical Hacking', 'credits': 3},
+    {'id': 5, 'name': 'Cyber Security Project', 'credits': 3},
+    {'id': 6, 'name': 'Security Compliance and Audit', 'credits': 3},
+    {'id': 7, 'name': 'Database Structure and Algorithm', 'credits': 3},
+    {'id': 8, 'name': 'Research Paper Writing', 'credits': 0},
+    {'id': 9, 'name': 'Calculus 2', 'credits': 3},
+    {'id': 10, 'name': 'Calculus Ultimate', 'credits': 3},
   ];
 
   final List<Map<String, dynamic>> _selectedSubjects = [];

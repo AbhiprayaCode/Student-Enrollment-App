@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/login',
       onGenerateRoute: (settings) {
         if (settings.name == '/home') {
-          final args = settings.arguments as String; // Expecting `studentId`
+          final args = settings.arguments as String;
           return MaterialPageRoute(
             builder: (context) => HomeScreen(studentId: args),
           );

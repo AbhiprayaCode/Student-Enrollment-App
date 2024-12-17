@@ -46,7 +46,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             Text(
-              'Welcome, Student $studentId',
+              'Welcome, $studentId',
               style: Theme.of(context).textTheme.titleLarge,
             ),
             const SizedBox(height: 20),
